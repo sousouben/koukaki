@@ -1,0 +1,39 @@
+/*animation des titres*/
+
+.titre1, .titre2, .titre3, .titre4 {
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    animation: 1s ease-in-out;
+    animation-name: animateTitre;
+  }
+  
+  .titre1 {
+    animation-delay: 2s;/* Décalage de 2 secondes pour la première animation */
+    animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+  }
+  
+  .titre2 {
+    animation-delay: 3s; /* Décalage de 3 secondes pour la deuxième animation */
+    animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+  }
+  .titre3 {
+    animation-delay: 8s;/* Décalage de 8 secondes pour la première animation */
+    animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+  }
+  
+  .titre4 {
+    animation-delay: 9s; /* Décalage de 9 secondes pour la deuxième animation */
+    animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+  }
+  
+  @keyframes animateTitre {
+    0% {
+      transform: translateY(100px);
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

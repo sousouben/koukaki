@@ -1,0 +1,24 @@
+/*animation du flottement du logo*/
+.bannerLogo, #catBleu,
+#catBlack,
+#catOrange  {
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, 10px); /*flotte vers le bas et la droite*/
+    }
+    50% {
+        transform: translate(-10px, -10px); /*vers le haut et la gauche*/
+    }
+    75% {
+        transform: translate(10px, -10px); /*flotte vers le bas et la gauche*/
+      }
+    85%{
+        transform: translate(-10px, 10px);/*flotte vers le haut et la droite*/
+    }
+}

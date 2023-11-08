@@ -1,0 +1,25 @@
+/* Animation des Fleurs */
+//sections
+.story__article::after, 
+.story h2::after, 
+#studio h2::before, 
+#studio h2::after,
+.site-footer::before,
+.site-footer::after,
+.site-footer ul::after,
+#fleurSunFlower,
+	#fleurOrchid,
+	#fleurHibiscus,
+	#fleurRandom,
+	#fleurFlower{
+  animation: rotate var(--rotationFleurs) linear infinite;
+}
+
+/*
+Keyframe pour faire tourner les Fleurs
+*/
+
+@keyframes rotate {
+    0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}

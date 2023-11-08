@@ -1,0 +1,47 @@
+//vidéo du court-métrage en fond
+.banner {
+    background-image: none;  // désactive l'image 
+    position: relative;
+
+    .bannerLogo {
+        width: 680.7px;
+        z-index: 1;
+    }
+    
+    .bannerVideo {
+        position: absolute;
+        width: 100% !important;
+        z-index: 0;
+        top: 0;
+    }
+    .bannerBackground{
+        width: 100%;
+    position: absolute;
+    top: 107px;
+    z-index: -1;
+    }
+    #parallax{
+        z-index: 1;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .banner {
+        background-image: url('../../assets/images/banner.png'); 
+
+        .bannerVideo {
+            display:none;
+        }
+        
+        .bannerLogo {
+            position:absolute;
+            top: 50px; 
+            left: 100px;
+            width: 80% !important;
+            z-index: 1;
+        }  
+        
+    }
+}

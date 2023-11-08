@@ -1,0 +1,56 @@
+/*fade-in animation de chaque section*/
+/* Animation de fondu vers le haut */
+#characters, .story, #place, #studio, .site-footer {
+  opacity: 0;
+  animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Applique des délais d'animation à chaque section */
+.story {
+  animation-delay:2s ;
+}
+
+#characters {
+  animation-delay: 4s;
+}
+
+#place {
+  animation-delay: 6s;
+}
+
+#studio {
+  animation-delay: 8s;
+}
+
+.site-footer {
+  animation-delay: 10s;
+}
+
+/* Animation de fondu vers le bas */
+.bannerVideo, .bannerLogo, .story__article, #studio > div {
+  animation: fadeInDown 3s;
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-200px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+

@@ -1,1 +1,138 @@
 2023/10/13 11:35:28 [alert] 16828#1344: OpenEvent("ngx_master_5948") failed (2: FormatMessage() error:(15100))
+2023/10/14 18:36:48 [alert] 13036#13092: OpenEvent("ngx_master_3568") failed (2: FormatMessage() error:(15100))
+2023/10/21 19:54:28 [error] 7148#2736: *1238 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 19:54:28 [error] 7148#2736: *1238 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 19:56:44 [error] 7148#2736: *1266 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 19:56:44 [error] 7148#2736: *1266 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 19:58:44 [error] 7148#2736: *1279 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 19:58:44 [error] 7148#2736: *1279 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:00:07 [error] 7148#2736: *1292 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:00:07 [error] 7148#2736: *1292 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:02:34 [error] 7148#2736: *1314 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:02:34 [error] 7148#2736: *1314 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:03:16 [error] 7148#2736: *1327 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:03:16 [error] 7148#2736: *1327 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:03:57 [error] 7148#2736: *1340 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:03:57 [error] 7148#2736: *1340 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:05:02 [error] 7148#2736: *1353 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "posts" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Trying to access array offset on value of type null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 26
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 28
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 29" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:05:02 [error] 7148#2736: *1353 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31
+PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:31
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 31" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:10:02 [error] 7148#2736: *1406 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 30
+PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:30
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 30" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:10:42 [error] 7148#2736: *1419 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 30
+PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:30
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 30" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/21 20:10:49 [error] 7148#2736: *1432 FastCGI sent in stderr: "PHP Warning:  Undefined variable $characters_query in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 30
+PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php:30
+Stack trace:
+#0 C:\Users\smoua\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\smoua\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\smoua\\...')
+#2 C:\Users\smoua\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\smoua\\...')
+#3 {main}
+  thrown in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 30" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10038", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/update-core.php?action=do-translation-upgrade"
+2023/10/23 11:58:44 [error] 8916#15400: *2028 FastCGI sent in stderr: "PHP Warning:  Undefined variable $main_character in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 17
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 17
+PHP Warning:  Undefined variable $main_character in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 18
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 18" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10039", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/"
+2023/10/23 11:59:14 [error] 8916#15400: *2047 FastCGI sent in stderr: "PHP Warning:  Undefined variable $main_character in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 17
+PHP Warning:  Attempt to read property "ID" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 17
+PHP Warning:  Undefined variable $main_character in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 18
+PHP Warning:  Attempt to read property "post_title" on null in C:\Users\smoua\Local Sites\koukaki\app\public\wp-content\themes\foce-child\templates\swiper.php on line 18" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10039", host: "koukaki.local", referrer: "http://koukaki.local/wp-admin/"

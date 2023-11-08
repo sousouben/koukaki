@@ -1,0 +1,41 @@
+/* CSS pour <section> Oscar */
+
+.oscars_image {
+    width: 25%;
+  }
+  
+.oscars_text {
+    background-image: url("../assets/images/orange_characters_bg.png");
+    background-size:contain;
+    font-size: 32px;
+  }
+  
+.oscars {
+    position: relative;
+    display: flex;
+    margin: 0px auto 320px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.oscars::before, .oscars::after {
+    content: "";
+    background-size: cover;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+  }
+  
+  .site-footer{
+    flex-direction: column;
+  }
+
+  .site-footer::before{
+    left: 13em;
+    top: 11em;
+  }
+  
+  .site-footer::after{
+    right: -4em;
+    bottom: 44.8em;
+  }

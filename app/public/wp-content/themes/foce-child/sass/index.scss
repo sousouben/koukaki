@@ -1,1 +1,26 @@
-@import "stylesSass/\ heroHeader";  
+/* Style Generale  */
+.site-main {
+	overflow: hidden;
+}
+
+:root{
+    --rotationFleurs : 17s;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+@import "stylesSass/menuBurger";
+@import "stylesSass/animation_fadein";
+@import "stylesSass/animation_float_logo";
+@import "stylesSass/animation_flowers";
+@import "stylesSass/heroHeader"; 
+@import "stylesSass/animation_title";
+@import "stylesSass/position_cloud";
+@import "stylesSass/oscars";

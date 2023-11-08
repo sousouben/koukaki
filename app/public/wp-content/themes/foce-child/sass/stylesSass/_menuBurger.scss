@@ -1,0 +1,187 @@
+/* Styles pour le menu burger */
+$background-color: black;
+
+.menuFull {
+    background-color: #FFF5E9;
+    opacity: 0;
+    transition: opacity 0.5s ease-in, height 0.5s ease-in;
+
+ &.nav_open {
+    opacity: 1;
+    height: 100vh;
+
+    visibility: visible;
+    display: block;
+    transition: opacity 0.5s ease-in, height 0.5s ease-in;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.boutonMenu {
+	width: 40px;
+	height: 24px;
+	cursor: pointer;
+	position: relative;
+	float: right;
+	margin-top: 30px;
+	margin-right: 120px;
+
+	span {
+		width: 100%;
+		height: 1px;
+		background-color: $background-color;
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: background-color 0.5s ease-in-out;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: $background-color;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		&::after{
+			transform: translateY(10px);
+		}
+		&::before {
+			transform: translateY(-10px);
+		}
+	}
+
+ &.active {
+	span {
+		background-color: transparent;
+		&::before {
+			transform: translateY(0px) rotateZ(45deg);
+		}
+		&::after {
+			transform: translateY(0px) rotateZ(-45deg);
+		}
+	}
+ }
+}
+
+.menuListe {
+  display: none;
+  background-color: #FFF5E9;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-navigation ul{
+    padding-left:166px;
+}
+
+.liste {
+	    ul {
+	        text-align: center;
+	        height: 57%;	        
+	    }
+
+	    li {
+	        text-align: center;
+            list-style-type: none !important;
+			padding-bottom: 20px;
+	    }
+
+	    a {	            
+	        font-size: 40px;
+	        font-weight: bold;
+
+	        &:hover {
+	            filter: drop-shadow(0px 0px 5px #ff5c00);
+	            -webkit-filter: drop;
+	        }
+	    }
+
+	    img {
+	        margin: auto;
+	        display: flex;
+	    }
+	}
+
+.paragrapheBurger {
+	text-align: center;
+    font-size: 16px !important;
+    padding-top: 68px !important;
+    color: black !important
+}
+
+// Images dans le menu-Burger
+/* Images du Menu deplier en mode Full */
+
+	#catBleu,
+	#catBlack,
+	#catOrange,
+	#fleurSunFlower,
+	#fleurOrchid,
+	#fleurHibiscus,
+	#fleurRandom,
+	#fleurFlower {
+		position: absolute;
+  }
+
+  .logoMenu {
+    width: 154.12px;
+	padding-bottom: 20px;
+	padding-top: 20px
+    }
+
+  #catBleu {
+    top: 170px;
+    left: 267px;
+    width: 109.22px;
+    height: 98.63px;
+  }
+
+  #catBlack {
+    top: 389px;
+    left: 1076px;
+    width: 154.74px;
+    height: 147.57px;
+  }
+
+  #catOrange {
+    bottom: 110px;
+    left: 79px;
+  }
+
+  #fleurSunFlower{
+    top: 169px;
+    left: 1039px;
+  }
+
+   #fleurOrchid{
+    top: 157px;
+    left:-59px;
+  }
+
+  #fleurHibiscus{
+    bottom: -120px;
+    right: -240px;
+    width: 30%;
+  }
+
+  #fleurRandom{
+    top: 310px;
+    left: 1396px;
+    width: 75.75px;
+  }
+
+  #fleurFlower {
+    bottom: 320px;
+    left: 213px;
+    width: 70.76px;
+  }
+

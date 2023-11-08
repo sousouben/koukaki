@@ -1,3 +1,293 @@
+@charset "UTF-8";
+/* Style Generale  */
+.site-main {
+  overflow: hidden;
+}
+
+:root {
+  --rotationFleurs: 17s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles pour le menu burger */
+.menuFull {
+  background-color: #FFF5E9;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+}
+.menuFull.nav_open {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+  display: block;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+  width: 100%;
+  overflow: hidden;
+}
+
+.boutonMenu {
+  width: 40px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-top: 30px;
+  margin-right: 120px;
+}
+.boutonMenu span {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+.boutonMenu span::before, .boutonMenu span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+.boutonMenu span::after {
+  transform: translateY(10px);
+}
+.boutonMenu span::before {
+  transform: translateY(-10px);
+}
+.boutonMenu.active span {
+  background-color: transparent;
+}
+.boutonMenu.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.boutonMenu.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+.menuListe {
+  display: none;
+  background-color: #FFF5E9;
+}
+.menuListe__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-navigation ul {
+  padding-left: 166px;
+}
+
+.liste ul {
+  text-align: center;
+  height: 57%;
+}
+.liste li {
+  text-align: center;
+  list-style-type: none !important;
+  padding-bottom: 20px;
+}
+.liste a {
+  font-size: 40px;
+  font-weight: bold;
+}
+.liste a:hover {
+  filter: drop-shadow(0px 0px 5px #ff5c00);
+  -webkit-filter: drop;
+}
+.liste img {
+  margin: auto;
+  display: flex;
+}
+
+.paragrapheBurger {
+  text-align: center;
+  font-size: 16px !important;
+  padding-top: 68px !important;
+  color: black !important;
+}
+
+/* Images du Menu deplier en mode Full */
+#catBleu,
+#catBlack,
+#catOrange,
+#fleurSunFlower,
+#fleurOrchid,
+#fleurHibiscus,
+#fleurRandom,
+#fleurFlower {
+  position: absolute;
+}
+
+.logoMenu {
+  width: 154.12px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#catBleu {
+  top: 170px;
+  left: 267px;
+  width: 109.22px;
+  height: 98.63px;
+}
+
+#catBlack {
+  top: 389px;
+  left: 1076px;
+  width: 154.74px;
+  height: 147.57px;
+}
+
+#catOrange {
+  bottom: 110px;
+  left: 79px;
+}
+
+#fleurSunFlower {
+  top: 169px;
+  left: 1039px;
+}
+
+#fleurOrchid {
+  top: 157px;
+  left: -59px;
+}
+
+#fleurHibiscus {
+  bottom: -120px;
+  right: -240px;
+  width: 30%;
+}
+
+#fleurRandom {
+  top: 310px;
+  left: 1396px;
+  width: 75.75px;
+}
+
+#fleurFlower {
+  bottom: 320px;
+  left: 213px;
+  width: 70.76px;
+}
+
+/*fade-in animation de chaque section*/
+/* Animation de fondu vers le haut */
+#characters, .story, #place, #studio, .site-footer {
+  opacity: 0;
+  animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Applique des délais d'animation à chaque section */
+.story {
+  animation-delay: 2s;
+}
+
+#characters {
+  animation-delay: 4s;
+}
+
+#place {
+  animation-delay: 6s;
+}
+
+#studio {
+  animation-delay: 8s;
+}
+
+.site-footer {
+  animation-delay: 10s;
+}
+
+/* Animation de fondu vers le bas */
+.bannerVideo, .bannerLogo, .story__article, #studio > div {
+  animation: fadeInDown 3s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*animation du flottement du logo*/
+.bannerLogo, #catBleu,
+#catBlack,
+#catOrange {
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, 10px); /*flotte vers le bas et la droite*/
+  }
+  50% {
+    transform: translate(-10px, -10px); /*vers le haut et la gauche*/
+  }
+  75% {
+    transform: translate(10px, -10px); /*flotte vers le bas et la gauche*/
+  }
+  85% {
+    transform: translate(-10px, 10px); /*flotte vers le haut et la droite*/
+  }
+}
+/* Animation des Fleurs */
+.story__article::after,
+.story h2::after,
+#studio h2::before,
+#studio h2::after,
+.site-footer::before,
+.site-footer::after,
+.site-footer ul::after,
+#fleurSunFlower,
+#fleurOrchid,
+#fleurHibiscus,
+#fleurRandom,
+#fleurFlower {
+  animation: rotate var(--rotationFleurs) linear infinite;
+}
+
+/*
+Keyframe pour faire tourner les Fleurs
+*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .banner {
   background-image: none;
   position: relative;
@@ -10,6 +300,17 @@
   position: absolute;
   width: 100% !important;
   z-index: 0;
+  top: 0;
+}
+.banner .bannerBackground {
+  width: 100%;
+  position: absolute;
+  top: 107px;
+  z-index: -1;
+}
+.banner #parallax {
+  z-index: 1;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 767px) {
@@ -26,4 +327,91 @@
     width: 80% !important;
     z-index: 1;
   }
+}
+/*animation des titres*/
+.titre1, .titre2, .titre3, .titre4 {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  animation: 1s ease-in-out;
+  animation-name: animateTitre;
+}
+
+.titre1 {
+  animation-delay: 2s; /* Décalage de 2 secondes pour la première animation */
+  animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+}
+
+.titre2 {
+  animation-delay: 3s; /* Décalage de 3 secondes pour la deuxième animation */
+  animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+}
+
+.titre3 {
+  animation-delay: 8s; /* Décalage de 8 secondes pour la première animation */
+  animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+}
+
+.titre4 {
+  animation-delay: 9s; /* Décalage de 9 secondes pour la deuxième animation */
+  animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
+}
+
+@keyframes animateTitre {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*animation des nuages*/
+.story #place {
+  background-image: url("../assets/images/Studio_Koukaki-image_place.png");
+}
+.story .cloud {
+  margin-bottom: 68%;
+  position: relative;
+}
+
+/* CSS pour <section> Oscar */
+.oscars_image {
+  width: 25%;
+}
+
+.oscars_text {
+  background-image: url("../assets/images/orange_characters_bg.png");
+  background-size: contain;
+  font-size: 32px;
+}
+
+.oscars {
+  position: relative;
+  display: flex;
+  margin: 0px auto 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.oscars::before, .oscars::after {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+}
+
+.site-footer {
+  flex-direction: column;
+}
+
+.site-footer::before {
+  left: 13em;
+  top: 11em;
+}
+
+.site-footer::after {
+  right: -4em;
+  bottom: 44.8em;
 }/*# sourceMappingURL=index.css.map */
