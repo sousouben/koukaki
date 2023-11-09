@@ -203,23 +203,23 @@ ul {
 }
 /* Applique des délais d'animation à chaque section */
 .story {
-  animation-delay: 2s;
-}
-
-#characters {
   animation-delay: 4s;
 }
 
-#place {
+#characters {
   animation-delay: 6s;
 }
 
-#studio {
+#place {
   animation-delay: 8s;
 }
 
-.site-footer {
+#studio {
   animation-delay: 10s;
+}
+
+.site-footer {
+  animation-delay: 12s;
 }
 
 /* Animation de fondu vers le bas */
@@ -310,7 +310,8 @@ Keyframe pour faire tourner les Fleurs
 }
 .banner #parallax {
   z-index: 1;
-  margin-bottom: 70px;
+  position: relative;
+  bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -320,12 +321,11 @@ Keyframe pour faire tourner les Fleurs
   .banner .bannerVideo {
     display: none;
   }
+  .banner .bannerBackground {
+    top: 77px;
+  }
   .banner .bannerLogo {
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    width: 80% !important;
-    z-index: 1;
+    width: 340px;
   }
 }
 /*animation des titres*/
@@ -338,22 +338,22 @@ Keyframe pour faire tourner les Fleurs
 }
 
 .titre1 {
-  animation-delay: 2s; /* Décalage de 2 secondes pour la première animation */
+  animation-delay: 4s; /* Décalage de 4 secondes pour la première animation */
   animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
 }
 
 .titre2 {
-  animation-delay: 3s; /* Décalage de 3 secondes pour la deuxième animation */
+  animation-delay: 5s; /* Décalage de 5 secondes pour la deuxième animation */
   animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
 }
 
 .titre3 {
-  animation-delay: 8s; /* Décalage de 8 secondes pour la première animation */
+  animation-delay: 10s; /* Décalage de 10 secondes pour la première animation */
   animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
 }
 
 .titre4 {
-  animation-delay: 9s; /* Décalage de 9 secondes pour la deuxième animation */
+  animation-delay: 11s; /* Décalage de 11 secondes pour la deuxième animation */
   animation-fill-mode: forwards; /* Maintient l'état final de l'animation */
 }
 

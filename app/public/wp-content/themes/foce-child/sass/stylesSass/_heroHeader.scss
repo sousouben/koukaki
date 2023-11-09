@@ -22,7 +22,8 @@
     }
     #parallax{
         z-index: 1;
-        margin-bottom: 70px;
+        position: relative;
+        bottom: 50px;
     }
 }
 
@@ -35,13 +36,14 @@
             display:none;
         }
         
-        .bannerLogo {
-            position:absolute;
-            top: 50px; 
-            left: 100px;
-            width: 80% !important;
-            z-index: 1;
-        }  
-        
+        .bannerBackground{
+            top: 77px;
+        }
+
+        .bannerLogo{
+            width: 340px;
+        }
+
+               
     }
 }
