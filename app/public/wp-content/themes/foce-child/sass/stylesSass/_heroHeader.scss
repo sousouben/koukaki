@@ -27,10 +27,11 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
 
     .banner {
         background-image: url('../../assets/images/banner.png'); 
+        min-height: 497px;
 
         .bannerVideo {
             display:none;
@@ -44,6 +45,26 @@
             width: 340px;
         }
 
-               
+        #parallax{
+            bottom: 83px;
+        }               
     }
+    
+    
+}
+
+@media (max-width: 1024px){
+    .banner {
+        min-height: 578px;
+
+        #parallax{
+            bottom: 34px;
+        }
+        .bannerLogo{
+            width: 477.7px;
+        }
+        .bannerBackground{
+            top: 80px;
+        }
+    }        
 }

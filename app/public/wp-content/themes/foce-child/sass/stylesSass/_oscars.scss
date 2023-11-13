@@ -39,3 +39,9 @@
     right: -4em;
     bottom: 44.8em;
   }
+
+  @media (max-width: 859px){
+    .oscars_text{
+      font-size: 27px;
+    }
+  }

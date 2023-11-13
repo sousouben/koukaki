@@ -39,8 +39,8 @@ ul {
   cursor: pointer;
   position: relative;
   float: right;
-  margin-top: 30px;
-  margin-right: 120px;
+  top: 30px;
+  right: 67px;
 }
 .boutonMenu span {
   width: 100%;
@@ -87,7 +87,7 @@ ul {
 }
 
 .main-navigation ul {
-  padding-left: 166px;
+  padding-left: 73px;
 }
 
 .liste ul {
@@ -184,6 +184,11 @@ ul {
   width: 70.76px;
 }
 
+@media (max-width: 1440px) {
+  #catBleu, #fleurFlower, #fleurSunFlower, #catBlack, #fleurHibiscus, #fleurRandom, #catOrange, #fleurOrchid {
+    display: none;
+  }
+}
 /*fade-in animation de chaque section*/
 /* Animation de fondu vers le haut */
 #characters, .story, #place, #studio, .site-footer {
@@ -314,9 +319,10 @@ Keyframe pour faire tourner les Fleurs
   bottom: 50px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   .banner {
     background-image: url("../../assets/images/banner.png");
+    min-height: 497px;
   }
   .banner .bannerVideo {
     display: none;
@@ -326,6 +332,23 @@ Keyframe pour faire tourner les Fleurs
   }
   .banner .bannerLogo {
     width: 340px;
+  }
+  .banner #parallax {
+    bottom: 83px;
+  }
+}
+@media (max-width: 1024px) {
+  .banner {
+    min-height: 578px;
+  }
+  .banner #parallax {
+    bottom: 34px;
+  }
+  .banner .bannerLogo {
+    width: 477.7px;
+  }
+  .banner .bannerBackground {
+    top: 80px;
   }
 }
 /*animation des titres*/
@@ -414,4 +437,10 @@ Keyframe pour faire tourner les Fleurs
 .site-footer::after {
   right: -4em;
   bottom: 44.8em;
+}
+
+@media (max-width: 859px) {
+  .oscars_text {
+    font-size: 27px;
+  }
 }/*# sourceMappingURL=index.css.map */
