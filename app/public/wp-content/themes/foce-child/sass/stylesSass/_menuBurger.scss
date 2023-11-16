@@ -117,6 +117,22 @@ $background-color: black;
     color: black !important
 }
 
+.menuListe__container::before {
+	content: url('../assets/images/orchid.png');
+	position: absolute;
+	top: 157px;
+    left:-59px;
+	animation: rotate 17s linear infinite;
+	}
+
+.menuListe::before{
+	content: url('../assets/images/random_flower.png');
+	position: absolute;
+	top: 226px;
+    left: 1356px;
+	animation: rotate 17s linear infinite;
+	}
+
 // Images dans le menu-Burger
 /* Images du Menu deplier en mode Full */
 
@@ -124,9 +140,7 @@ $background-color: black;
 	#catBlack,
 	#catOrange,
 	#fleurSunFlower,
-	#fleurOrchid,
 	#fleurHibiscus,
-	#fleurRandom,
 	#fleurFlower {
 		position: absolute;
   }
@@ -161,21 +175,11 @@ $background-color: black;
     left: 1039px;
   }
 
-   #fleurOrchid{
-    top: 157px;
-    left:-59px;
-  }
 
   #fleurHibiscus{
     bottom: -120px;
     right: -240px;
     width: 30%;
-  }
-
-  #fleurRandom{
-    top: 310px;
-    left: 1396px;
-    width: 75.75px;
   }
 
   #fleurFlower {
@@ -186,7 +190,8 @@ $background-color: black;
 
   @media (max-width: 1440px){
 	
-    #catBleu, #fleurFlower,#fleurSunFlower, #catBlack, #fleurHibiscus, #fleurRandom, #catOrange, #fleurOrchid  {
+    #catBleu, #fleurFlower,#fleurSunFlower, #catBlack, #fleurHibiscus, #catOrange, .menuListe__container::before, .menuListe::before {
         display: none;
     }
+
   }

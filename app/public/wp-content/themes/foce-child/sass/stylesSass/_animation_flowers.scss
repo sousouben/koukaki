@@ -1,4 +1,5 @@
 /* Animation des Fleurs */
+
 //sections
 .story__article::after, 
 .story h2::after, 
@@ -12,8 +13,8 @@
 	#fleurHibiscus,
 	#fleurRandom,
 	#fleurFlower{
-  animation: rotate var(--rotationFleurs) linear infinite;
-}
+  animation: rotate 17s linear infinite;
+  }
 
 /*
 Keyframe pour faire tourner les Fleurs

@@ -1,6 +1,6 @@
 //vidéo du court-métrage en fond
 .banner {
-    background-image: none;  // désactive l'image 
+    background-image: none;  
     position: relative;
 
     .bannerLogo {
@@ -26,8 +26,22 @@
         bottom: 50px;
     }
 }
+@media (max-width: 1024px){
+    .banner {
+        min-height: 578px;
 
-@media (max-width: 780px) {
+        #parallax{
+            bottom: 34px;
+        }
+        .bannerLogo{
+            width: 477.7px;
+        }
+        .bannerBackground{
+            top: 78px;
+        }
+    }        
+}
+@media (max-width: 768px) {
 
     .banner {
         background-image: url('../../assets/images/banner.png'); 
@@ -53,18 +67,4 @@
     
 }
 
-@media (max-width: 1024px){
-    .banner {
-        min-height: 578px;
 
-        #parallax{
-            bottom: 34px;
-        }
-        .bannerLogo{
-            width: 477.7px;
-        }
-        .bannerBackground{
-            top: 80px;
-        }
-    }        
-}

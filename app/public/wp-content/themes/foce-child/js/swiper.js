@@ -43,10 +43,10 @@ const swiper = new Swiper(".swiper-container", {
   // Fonction appelée lors de l'initialisation de Swiper
   on: {
     init: function () {
-      // Sélectionnez toutes les images à l'intérieur des diapositives Swiper
+      // Sélectionne toutes les images à l'intérieur des diapositives Swiper
       const swiperImages = document.querySelectorAll(".swiper-slide img");
 
-      // Appliquez le style CSS à chaque image
+      // style CSS à chaque image
       swiperImages.forEach((img) => {
         img.style.display = "block";
         img.style.maxWidth = "250px";

@@ -45,9 +45,7 @@
 			    <img id="catBlack"        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/blackcat.png'; ?>" alt="Chat noir">
 			    <img id="catOrange"       src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orangecat.png'; ?>" alt="Chat orange">
 			    <img id="fleurSunFlower"  src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Sunflower.png'; ?>" alt="Fleur blanche">
-			    <img id="fleurOrchid"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orchid.png'; ?>" alt="Orchide violette">
-			    <img id="fleurHibiscus"   src="<?php echo get_stylesheet_directory_uri() . '/assets/images/hibiscus_footer.png'; ?>" alt="Hibiscus">
-			    <img id="fleurRandom"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/random_flower.png'; ?>" alt="petite Fleur violette">
+			    <img id="fleurHibiscus"   src="<?php echo get_stylesheet_directory_uri() . '/assets/images/hibiscus_footer.png'; ?>" alt="Hibiscus">			    
 			    <img id="fleurFlower"     src="<?php echo get_stylesheet_directory_uri() . '/assets/images/flower.png'; ?>" alt="petite Fleur orange">
 
 			    <ul class="liste">

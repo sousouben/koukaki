@@ -2,11 +2,6 @@
 .site-main {
 	overflow: hidden;
 }
-
-:root{
-    --rotationFleurs : 17s;
-}
-
 a{
     text-decoration:none;
 }
@@ -14,6 +9,19 @@ a{
 ul{
     padding: 0;
     margin: 0;
+}
+
+.story #characters h3{
+    background-position: left;
+    text-align: left;
+    padding: 1.5em 2em;
+}
+
+@media (max-width: 1439px){
+    .story #characters h3{
+        background-position: center;
+        text-align: center;
+    }
 }
 
 @import "stylesSass/menuBurger";

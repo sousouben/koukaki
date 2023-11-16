@@ -1,4 +1,5 @@
 <?php
+//Requête pour Récupérer les Personnages
 $args = array(
     'post_type' => 'characters',
     'posts_per_page' => -1,
@@ -8,6 +9,7 @@ $args = array(
 $characters_query = new WP_Query($args);
 ?>
 
+<!--Affichage du Carrousel Swiper avec les Personnages-->
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <?php

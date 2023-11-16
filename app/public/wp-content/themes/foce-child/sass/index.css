@@ -4,10 +4,6 @@
   overflow: hidden;
 }
 
-:root {
-  --rotationFleurs: 17s;
-}
-
 a {
   text-decoration: none;
 }
@@ -17,6 +13,18 @@ ul {
   margin: 0;
 }
 
+.story #characters h3 {
+  background-position: left;
+  text-align: left;
+  padding: 1.5em 2em;
+}
+
+@media (max-width: 1439px) {
+  .story #characters h3 {
+    background-position: center;
+    text-align: center;
+  }
+}
 /* Styles pour le menu burger */
 .menuFull {
   background-color: #FFF5E9;
@@ -119,14 +127,28 @@ ul {
   color: black !important;
 }
 
+.menuListe__container::before {
+  content: url("../assets/images/orchid.png");
+  position: absolute;
+  top: 157px;
+  left: -59px;
+  animation: rotate 17s linear infinite;
+}
+
+.menuListe::before {
+  content: url("../assets/images/random_flower.png");
+  position: absolute;
+  top: 226px;
+  left: 1356px;
+  animation: rotate 17s linear infinite;
+}
+
 /* Images du Menu deplier en mode Full */
 #catBleu,
 #catBlack,
 #catOrange,
 #fleurSunFlower,
-#fleurOrchid,
 #fleurHibiscus,
-#fleurRandom,
 #fleurFlower {
   position: absolute;
 }
@@ -161,21 +183,10 @@ ul {
   left: 1039px;
 }
 
-#fleurOrchid {
-  top: 157px;
-  left: -59px;
-}
-
 #fleurHibiscus {
   bottom: -120px;
   right: -240px;
   width: 30%;
-}
-
-#fleurRandom {
-  top: 310px;
-  left: 1396px;
-  width: 75.75px;
 }
 
 #fleurFlower {
@@ -185,7 +196,7 @@ ul {
 }
 
 @media (max-width: 1440px) {
-  #catBleu, #fleurFlower, #fleurSunFlower, #catBlack, #fleurHibiscus, #fleurRandom, #catOrange, #fleurOrchid {
+  #catBleu, #fleurFlower, #fleurSunFlower, #catBlack, #fleurHibiscus, #catOrange, .menuListe__container::before, .menuListe::before {
     display: none;
   }
 }
@@ -279,7 +290,7 @@ ul {
 #fleurHibiscus,
 #fleurRandom,
 #fleurFlower {
-  animation: rotate var(--rotationFleurs) linear infinite;
+  animation: rotate 17s linear infinite;
 }
 
 /*
@@ -319,7 +330,21 @@ Keyframe pour faire tourner les Fleurs
   bottom: 50px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1024px) {
+  .banner {
+    min-height: 578px;
+  }
+  .banner #parallax {
+    bottom: 34px;
+  }
+  .banner .bannerLogo {
+    width: 477.7px;
+  }
+  .banner .bannerBackground {
+    top: 78px;
+  }
+}
+@media (max-width: 768px) {
   .banner {
     background-image: url("../../assets/images/banner.png");
     min-height: 497px;
@@ -335,20 +360,6 @@ Keyframe pour faire tourner les Fleurs
   }
   .banner #parallax {
     bottom: 83px;
-  }
-}
-@media (max-width: 1024px) {
-  .banner {
-    min-height: 578px;
-  }
-  .banner #parallax {
-    bottom: 34px;
-  }
-  .banner .bannerLogo {
-    width: 477.7px;
-  }
-  .banner .bannerBackground {
-    top: 80px;
   }
 }
 /*animation des titres*/

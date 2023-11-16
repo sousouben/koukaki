@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
   // Régle la vitesse de parallaxe pour le titre
   const titreParallaxSpeed = 0.5;
 
-  // Limite la translation maximale sur l'axe des Y à 250 pixels
+  // Limite la position maximale sur l'axe des Y à 250 pixels
   const maxTranslationY = 250;
   const translationY = Math.min(scrollY * titreParallaxSpeed, maxTranslationY);
 
